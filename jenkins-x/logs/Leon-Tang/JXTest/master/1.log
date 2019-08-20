@@ -1,0 +1,35 @@
+Step: step-credential-initializer-kj26j:
+
+{"level":"warn","ts":1566286977.9768374,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1566286977.9780147,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: step-working-dir-initializer-zr29v:
+
+{"level":"warn","ts":1566286978.9407487,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1566286978.9453397,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/**test\""}
+Step: step-place-tools:
+
+Step: step-git-source-leon-tang-**test-master-vfzpx:
+
+{"level":"warn","ts":1566286985.0176992,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1566286985.5226135,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*********/JXTest.git @ v0.0.1 in path /workspace/source"}
+Step: step-git-merge:
+
+WARNING: no SHAs to merge, falling back to initial cloned commit
+Step: step-setup-**-git-credentials:
+
+Generated Git credentials file /workspace/xdg_config/git/credentials
+Step: step-build-container-build:
+
+failed to open log file "/var/log/pods/**_leon-tang-**test-master-1-from-build-pack-pfpmv-pod-9d1751_206e4766-c31e-11e9-8555-aa6804fb7c07/step-build-container-build/0.log": open /var/log/pods/**_leon-tang-**test-master-1-from-build-pack-pfpmv-pod-9d1751_206e4766-c31e-11e9-8555-aa6804fb7c07/step-build-container-build/0.log: no such file or directory
+Step: step-build-post-build:
+
+Unable to retrieve container logs for docker://6765b8ebfd99c209ae8fc3a52ab9d7c66cad0160939336a6518b4e61a9817cb8
+Step: step-promote-changelog:
+
+Unable to retrieve container logs for docker://f2095e29f568398fa867326940f44b6f90c688fdf5dc6423f3c08839e9c75f46
+Step: step-promote-helm-release:
+
+Unable to retrieve container logs for docker://40c27a751dcab0858fefca96156d3c7d50fdc67825578af4819927f70e6c2ef7
+Step: step-promote-**-promote:
+
+Unable to retrieve container logs for docker://332b1e1f96eba905c54c21d9c5bcc12574a7200002f9793185e322f03398c8dd
